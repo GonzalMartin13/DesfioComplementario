@@ -1,0 +1,59 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: auto 125px 250px 250px 125px;
+    grid-gap: 10px;
+    grid-template-areas: "head head head"
+                         "nav   nav  nav"
+                         "art   art  asi"
+                         "art   art  asi"
+                         "foot  foot foot";
+}
+
+.HeadBody{
+    background-color: greenyellow;
+    grid-area: head;
+}
+
+.NavBody{
+    background-color: orange;
+    grid-area: nav;
+}
+
+.ArtBody{
+    text-align: center;
+    background-color: blue;
+    grid-area: art;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+.HeadArt{
+    background-color: greenyellow;
+}
+.MainArt{
+    background-color: white;
+}
+.SecArt1{
+    background-color: black;
+}
+.SecArt2{
+    background-color: darkmagenta;
+}
+.FootArt{
+    background-color: deeppink;
+}
+
+.DivBody{
+    background-color: yellow;
+    grid-area: asi;
+    width: 250px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.FootBody{
+    background-color: red;
+    grid-area: foot;
+}
